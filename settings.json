@@ -4,15 +4,8 @@
     "actions": 
     [
         {
-            "command": "scrollUpPage",
-            "keys": "alt+u"
-        },
-        {
-            "command": 
-            {
-                "action": "scrollDown"
-            },
-            "keys": "alt+j"
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -24,12 +17,27 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "alt+j"
+        },
+        {
+            "command": "scrollUpPage",
+            "keys": "alt+u"
         },
         {
             "command": "paste",
             "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
         },
         {
             "command": 
@@ -132,12 +140,8 @@
             "keys": "ctrl+shift+tab"
         },
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
+            "command": "unbound",
+            "keys": "ctrl+shift+w"
         },
         {
             "command": 
@@ -201,17 +205,17 @@
             "command": 
             {
                 "action": "switchToTab",
-                "index": 5
+                "index": 6
             },
-            "keys": "alt+6"
+            "keys": "alt+7"
         },
         {
             "command": 
             {
                 "action": "switchToTab",
-                "index": 6
+                "index": 5
             },
-            "keys": "alt+7"
+            "keys": "alt+6"
         },
         {
             "command": 
@@ -266,6 +270,10 @@
                 "action": "nextTab"
             },
             "keys": "ctrl+alt+l"
+        },
+        {
+            "command": "closePane",
+            "keys": "alt+shift+w"
         }
     ],
     "alwaysShowNotificationIcon": true,
