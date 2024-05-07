@@ -4,8 +4,15 @@
     "actions": 
     [
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": "scrollUpPage",
+            "keys": "alt+u"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "alt+j"
         },
         {
             "command": 
@@ -17,27 +24,12 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
-                "action": "scrollDown"
-            },
-            "keys": "alt+j"
-        },
-        {
-            "command": "scrollUpPage",
-            "keys": "alt+u"
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": "paste",
             "keys": "ctrl+v"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
         },
         {
             "command": 
@@ -146,6 +138,14 @@
         {
             "command": 
             {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
                 "action": "scrollUp"
             },
             "keys": "alt+k"
@@ -205,17 +205,17 @@
             "command": 
             {
                 "action": "switchToTab",
-                "index": 6
+                "index": 5
             },
-            "keys": "alt+7"
+            "keys": "alt+6"
         },
         {
             "command": 
             {
                 "action": "switchToTab",
-                "index": 5
+                "index": 6
             },
-            "keys": "alt+6"
+            "keys": "alt+7"
         },
         {
             "command": 
@@ -284,7 +284,7 @@
     "experimental.rendering.software": false,
     "focusFollowMouse": false,
     "launchMode": "maximized",
-    "minimizeToNotificationArea": true,
+    "minimizeToNotificationArea": false,
     "newTabMenu": 
     [
         {
