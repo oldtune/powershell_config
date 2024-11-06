@@ -19,3 +19,8 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
+
+# Accept next word of prediction
+Set-PSReadLineKeyHandler -Chord "Ctrl+f" -Function ForwardWord
+# Accept whole prediction
+Set-PSReadLineKeyHandler -Chord "Ctrl+n" -Function ForwardChar
